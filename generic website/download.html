@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="btn-area">
+            <a href="index.html" class="link-btn">Home</a>
+            <a href="download.html" class="link-btn">Download</a>
+            <a href="contact.html" class="link-btn">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <a href="Assets/black-marble-swirl-aesthetic-acrylic-paint-handmade-element-experimental-art.jpg" download="black-marble-swirl-aesthetic-acrylic-paint-handmade-element-experimental-art" class="download-button">Download File</a>
+    <style>
+            body{
+            font-family: Montserrat,monospace;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            }
+            .navbar{
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                background-color: rgba(255, 255, 255, 0.539);
+                backdrop-filter: blur(5px);
+                min-width: 100%;
+                padding:2vh;
+                margin: -10px;
+            }
+            .btn-area{
+                display: grid;
+                gap: 0vh;
+                grid-auto-flow: column;
+            }
+            .link-btn{
+                transition: .25s;
+                color: black;
+                background-color: white;
+                text-decoration: none;
+                padding-top: 1vh;
+                padding-bottom: 1vh;
+                padding-left: 4vh;
+                padding-right: 4vh;
+            }
+            .link-btn:first-child{
+                text-underline-offset: 5px;
+                background-color: #b7faff;
+                border-left-width: .3vh;
+                border-top-left-radius: 1vh;
+                border-bottom-left-radius: 1vh;
+            }
+            .link-btn:last-child{
+                border-right-width: .3vh;
+                border-top-right-radius: 1vh;
+                border-bottom-right-radius: 1vh;
+                background-color: #90F3FF;
+            }
+            .link-btn:nth-child(2){
+                text-decoration: underline;
+                background-color: #90BEDE;
+            }
+            .link-btn:nth-child(3){
+                background-color: #68EDC6;
+            }
+            .btn-area:hover .link-btn{
+                filter: brightness(.8) blur(1px); 
+            }
+            .btn-area .link-btn:hover{
+                filter: brightness(1);
+            }
+            .container{
+                background: url(Assets/black-marble-swirl-aesthetic-acrylic-paint-handmade-element-experimental-art.jpg) ;
+                background-position: center;
+                background-size: cover;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                min-width: 100vh;
+            }
+            .download-button{ 
+                padding: 50px;
+                text-decoration: none;
+                cursor:pointer;
+                color: white;
+                font-size: 32px;
+                background-color: #a5a5a582;
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    </style>
+</body>
+</html>

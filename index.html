@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="btn-area">
+            <a href="index.html" class="link-btn">Home</a>
+            <a href="download.html" class="link-btn">Download</a>
+            <a href="contact.html" class="link-btn">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sections">
+            <div class="text-background">Navigate using the home section.</div>
+        </div>
+        <div class="sections">
+            <div class="text-background">Download files.</div>
+        </div>
+        <div class="sections">
+            <div class="text-background">Or contact us.</div>
+        </div>
+    </div>
+    <style>
+        body{
+            font-family: Montserrat,monospace;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.539);
+            backdrop-filter: blur(5px);
+            min-width: 100%;
+            padding:2vh;
+            margin: -10px;
+        }
+        .btn-area{
+            display: grid;
+            gap: 0vh;
+            grid-auto-flow: column;
+        }
+        .link-btn{
+            transition: .25s;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            padding-left: 4vh;
+            padding-right: 4vh;
+        }
+        .link-btn:first-child{
+            text-decoration: underline;
+            background-color: #b7faff;
+            border-left-width: .3vh;
+            border-top-left-radius: 1vh;
+            border-bottom-left-radius: 1vh;
+        }
+        .link-btn:last-child{
+            border-right-width: .3vh;
+            border-top-right-radius: 1vh;
+            border-bottom-right-radius: 1vh;
+            background-color: #90F3FF;
+        }
+        .link-btn:nth-child(2){
+            background-color: #90BEDE;
+        }
+        .link-btn:nth-child(3){
+            background-color: #68EDC6;
+        }
+        .btn-area:hover .link-btn{
+            filter: brightness(.8) blur(1px); 
+        }
+        .btn-area .link-btn:hover{
+            filter: brightness(1);
+        }
+        .container{
+            background-color: black;
+            margin-top: -10px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .sections{ 
+            cursor:default;
+            color: white;
+            font-size: 32px;
+            padding: 10px;
+            background-color: #90BEDE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            min-width: 100vh;
+        }
+        .text-background{
+            display: flex;
+            align-items: center;
+            padding: 2vh;
+            background-color: rgba(103, 103, 103, 0.459);
+            backdrop-filter: blur(5px);
+            border-radius: 25px;
+        }
+        .sections:nth-child(1){
+            color: #90F3FF;
+            background: url(Assets/3d-rendering-abstract-black-white-background.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+        .sections:nth-child(2){
+            color: #90BEDE;
+            background: url(Assets/black-marble-swirl-aesthetic-acrylic-paint-handmade-element-experimental-art.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+        .sections:nth-child(3){
+            color: #90F3FF;
+            background: url(Assets/colorful-pastel-marble-background-diy-aesthetic-flowing-texture-experimental-art.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+    </style>
+</body>
+</html>
